@@ -16,6 +16,7 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--f-body);overflow:hidden;-webkit-tap-highlight-color:transparent}
 .app{height:100%;height:100dvh;display:grid;grid-template-columns:1fr minmax(320px,380px)}
@@ -570,7 +571,7 @@ function runBoot(){
       logEl.innerHTML+=(i?"\n":"")+ln; if(soundOn&&AC) sfxBeep(); barEl.style.width=((i+1)/BOOT.length*100)+"%"; if(i===BOOT.length-1) finishLog(); },tAcc)); });
 }
 bootEl.addEventListener("click",e=>{ if(!bootDone && e.target!==btn) finishLog(); });
-btn.onclick=()=>{ sfxPowerUp(); bootEl.style.opacity=0; setTimeout(()=>bootEl.hidden=true,600);
+btn.onclick=()=>{ sfxPowerUp(); bootEl.style.opacity=0; bootEl.style.pointerEvents="none"; setTimeout(()=>bootEl.hidden=true,600);
   flickerUntil=performance.now()+(reduce?0:900); ledTarget=STEPS[cur].led?1:0; };
 runBoot();
 </script>
