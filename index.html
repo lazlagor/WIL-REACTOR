@@ -177,10 +177,10 @@ const STEPS = [
          <p>Я його не купив. Сам придумав, сам вирізав на ЧПК, сам зібрав по шарах. А в самому серці — ми. Тисни «Далі», покажу, що там всередині.</p>`,
    tags:[{p:[0,25,20.5],t:"тут ми",c:""}] },
  { n:"02", title:'Як він <em>світиться</em>', cam:{yaw:0,pitch:4,zoom:1.18,gap:0}, led:1,
-   html:`<p>Всередині два прозорі диски, а навколо них по краю обклеєна LED-стрічка — світлодіодами всередину.</p>
+   html:`<p>Всередині два прозорі диски, а навколо них по колу йде LED-стрічка — світлодіодами всередину, прямо в торець.</p>
          <p>Світло біжить прямо в товщі акрилу і вилазить тільки там, де я фрезою вигравіював лінії. Тому горять «обмотки» 12 котушок і дуги 6 секторів, а все інше темне. Ніякої фарби — чисто фізика.</p>`,
    tags:[{p:[0,54,20],t:"гравіювання світиться",c:""},{p:[-48,-48,22],t:"12 котушок",c:""}] },
- { n:"03", title:'Шість <em>шарів</em>', cam:{yaw:-52,pitch:16,zoom:0.86,gap:15}, led:1,
+ { n:"03", title:'Шість <em>шарів</em>', cam:{yaw:-64,pitch:14,zoom:0.6,gap:15}, led:1,
    html:`<p>Ось він розібраний. Шість шарів по 4 мм: спереду чорні маска, обідок і зірка, за ними два світловоди з гравіюванням, кільця, порожнина під дріт і задня пластина.</p>
          <p>16 різних деталей, кожну я креслив і вирізав окремо. Разом — 24 мм.</p>`,
    tags:[{p:[0,72,22],t:"маска + обідок",c:"",lvl:5},{p:[0,-60,14],t:"світловоди",c:"",lvl:3},{p:[0,-72,2],t:"задня пластина",c:"",lvl:0}] },
@@ -188,18 +188,18 @@ const STEPS = [
    html:`<p>Ось ми — під віконцем 3 мм, у чорній гільзі. Я спеціально зробив так, щоб світло від стрічки впиралось у чорні стінки і на фото не падало, тому воно не засвічується і не вигорить.</p>
          <p>Захочеш інше фото — відкручуєш 3 гайки ззаду, і за дві хвилини там новий кадр. Але це краще не міняй 😄</p>`,
    tags:[{p:[0,-25,20.5],t:"віконце 3 мм",c:""},{p:[24,22,20.5],t:"чорна гільза",c:""}] },
- { n:"05", title:'Звідки <em>струм</em>', cam:{yaw:210,pitch:24,zoom:0.82,gap:11}, led:1, wire:1,
+ { n:"05", title:'Звідки <em>струм</em>', cam:{yaw:222,pitch:22,zoom:0.66,gap:11}, led:1, wire:1,
    html:`<p>Живиться від звичайного USB — від зарядки або від павербанка. Тобто світить навіть коли світло вирубили.</p>
          <p>Кабель (синій) заходить ззаду через проріз, йде схованою порожниною (вона підсвічена) донизу і підключається до стрічки. Зовні нічого не видно.</p>`,
    tags:[{p:[92,-24,-16],t:"USB",c:"wire"},{p:[38,-18,6],t:"порожнина",c:"wire",lvl:1},{p:[0,-61,10],t:"початок стрічки",c:"wire",lvl:2}] },
- { n:"06", title:'Як <em>зібрано</em>', cam:{yaw:-40,pitch:20,zoom:0.9,gap:13}, led:0, glue:1,
+ { n:"06", title:'Як <em>зібрано</em>', cam:{yaw:-56,pitch:18,zoom:0.64,gap:13}, led:0, glue:1,
    html:`<div class="legend">
           <div><i style="background:#ff9a3c"></i>склеєно: морда реактора і підставка</div>
           <div><i style="background:#5f8fb3"></i>без клею — тримають 3 гвинти M3</div>
           <div><i style="background:#e7edf2"></i>просто вкладено: віконце, фото, підкладки</div></div>
          <p>Я спеціально зробив його розбірним. Якщо колись щось треба буде замінити — нічого ламати не доведеться.</p>`,
    tags:[{p:[0,66.25,24],t:"гвинт M3",c:"gold",lvl:5}] },
- { n:"07", title:'Креслення', cam:{yaw:-38,pitch:14,zoom:0.86,gap:14}, led:1, bp:1,
+ { n:"07", title:'Креслення', cam:{yaw:-60,pitch:14,zoom:0.62,gap:14}, led:1, bp:1,
    html:`<p>Розріз A-A — ніби реактор розпиляли навпіл по вертикалі. Видно всі 6 шарів, LED на торці і фото в гільзі.</p>
          <canvas class="bp-sec" id="bpSec" aria-label="Розріз реактора збоку"></canvas>
          <div class="hint2">// тапни деталь — підсвічу її в 3D</div>
@@ -208,7 +208,7 @@ const STEPS = [
    html:`<div class="stats">
           <div><b>1 / 1</b><span>екземпляр у світі</span></div><div><b>16</b><span>деталей вручну</span></div>
           <div><b>6</b><span>шарів по 4 мм</span></div><div><b>Ø140</b><span>мм діаметр</span></div>
-          <div><b>~37</b><span>см LED-стрічки</span></div><div><b>4</b><span>людини в серці</span></div></div>
+          <div><b>~39</b><span>см LED-стрічки</span></div><div><b>4</b><span>людини в серці</span></div></div>
          <div class="uptime" id="uptime"></div>
          <p>Креслення були тільки під цей реактор, і фото в ньому тільки наше. Другого такого нема ніде.</p>
          <p>З днем народження, Віл. Крути його сам — пальцем на моделі.</p>`, tags:[] },
@@ -224,19 +224,33 @@ const byArea=pid=>[...GEO[pid].c].sort((a,b)=>Math.abs(area(b))-Math.abs(area(a)
 const CAVITY=pathOf([byArea("R1")[1],byArea("T2")[0]]);
 const STACK=[["B1",0],["R1",1],["T2",1],["L2",2],["S1",2],["T1",2],["L1",3],["S1",3],["T1",3],["M1",4],["F1",5],["F2",5]];
 const COL={BLACK4:["#2b2f35","#15171a"],CLEAR4:["rgba(190,232,255,0.15)","rgba(140,200,230,0.09)"],CLEAR3:["rgba(255,255,255,0.12)","rgba(255,255,255,0.06)"]};
-const GLUE={F1:"g",F2:"g",M1:"g",T1:"g",T2:"g",ST0:"g",ST1:"g",ST2:"g",ST3:"g",L1:"c",L2:"c",S1:"c",R1:"c",B1:"c"};
+const GLUE={K1:"l",W1:"l",F1:"g",F2:"g",M1:"g",T1:"g",T2:"g",ST0:"g",ST1:"g",ST2:"g",ST3:"g",L1:"c",L2:"c",S1:"c",R1:"c",B1:"c"};
 const QTY={S1:2,T1:2,K1:3};
 const BP_ORDER=["F1","F2","M1","L1","L2","S1","T1","T2","R1","B1","W1","K1","ST0","ST1","ST2","ST3"];
 const MATSHORT={BLACK4:"чорний ПВХ 4",CLEAR4:"акрил 4",CLEAR3:"акрил 3"};
 let focus=null, overload=0;
-const GLUECOL={g:["#ff9a3c","#9c5216"],c:["rgba(95,143,179,0.42)","rgba(95,143,179,0.22)"]};
+const GLUECOL={l:["#e7edf2","#9aa4ab"],g:["#ff9a3c","#9c5216"],c:["rgba(95,143,179,0.42)","rgba(95,143,179,0.22)"]};
 
+// ================== РОЗСУВ: кожна деталь окремо ==================
+// [ключ, тип, pid, реальна z, товщина] — у порядку ззаду наперед
+const ITEMS=[
+ ["B1","slab","B1",0,T],["R1","slab","R1",T,T],["T2","slab","T2",T,T],["CARD","card","",T,.8],["K1a","slab","K1",4.8,T],
+ ["L2","slab","L2",2*T,T],["S1b","slab","S1",2*T,T],["T1b","slab","T1",2*T,T],["K1b","slab","K1",8.8,T],["LED","led","",2*T,2*T],
+ ["L1","slab","L1",3*T,T],["S1a","slab","S1",3*T,T],["T1a","slab","T1",3*T,T],["K1c","slab","K1",12.8,T],
+ ["M1","slab","M1",4*T,T],["PHOTO","photo","",16.75,.25],["W1","slab","W1",17,3],["F2","slab","F2",5*T,T],["F1","slab","F1",5*T,T]];
+const SLOT={}; ITEMS.forEach((it,i)=>SLOT[it[0]]=i);
+const SMAX=ITEMS.length-1;
+const LVLKEY={0:"B1",1:"R1",2:"LED",3:"L1",4:"M1",5:"F1"};
+const KEX=.45;                                         // мм розсуву між сусідніми деталями на 1 од. gap
+function ex(key){ return SLOT[key]*st.gap*KEX; }
+function exMid(){ return SMAX*st.gap*KEX/2; }
 // ================== КАМЕРА ==================
-const st={yaw:-24*D2R,pitch:10*D2R,zoom:1,gap:0}; let led=0, ledTarget=0, flickerUntil=0, wire=0, glue=0, spin=0, W=0,H=0,DPR=1;
-function rot(v){const cy=Math.cos(st.yaw),sy=Math.sin(st.yaw),cp=Math.cos(st.pitch),sp=Math.sin(st.pitch);
+const st={yaw:-24*D2R,pitch:10*D2R,zoom:1,gap:0}; let bob=0, sway=0, levOn=false, nowT=0, viewOff=0;
+let led=0, ledTarget=0, flickerUntil=0, wire=0, glue=0, spin=0, W=0,H=0,DPR=1;
+function rot(v){const Y=st.yaw+sway, cy=Math.cos(Y),sy=Math.sin(Y),cp=Math.cos(st.pitch),sp=Math.sin(st.pitch);
   const x=v[0]*cy+v[2]*sy, z=-v[0]*sy+v[2]*cy; return [x, v[1]*cp-z*sp, v[1]*sp+z*cp];}
 function scale(){return Math.min(W,H*1.15)/210*st.zoom;}
-function center(p){return [p[0],p[1],p[2]-12-2.5*st.gap];}
+function center(p){return [p[0],p[1]+bob+viewOff,p[2]-12-exMid()];}
 function setPlane(O,u,v){const s=scale()*DPR, cx=W*DPR*.5, cy=H*DPR*.53;
   const ru=rot(u),rv=rot(v),ro=rot(center(O));
   ctx.setTransform(s*ru[0],-s*ru[1],s*rv[0],-s*rv[1],cx+s*ro[0],cy-s*ro[1]);}
@@ -248,7 +262,7 @@ const photoImg=new Image(); let photoReady=false;
 photoImg.onload=()=>{photoReady=true;draw();}; photoImg.src=PHOTO;
 
 // ================== МАЛЮВАННЯ ==================
-function slab(pid,z0,front,extra){
+function slab(pid,z0,front,extra,th){ th=th||T;
   const mat=GEO[pid].mat; let [body,side]=COL[mat];
   if(glue && GLUE[pid]) [body,side]=GLUECOL[GLUE[pid]];
   const opaque = mat==="BLACK4" || (glue && GLUE[pid]==="g");
@@ -256,7 +270,7 @@ function slab(pid,z0,front,extra){
   const dim = focus && pid!==focus; if(dim) ctx.globalAlpha=.1;
   if(focus && pid===focus){ body="#ffc66b"; side="#8a5a14"; }
   ord.forEach((k,i)=>{
-    const last=i===N; setPlane([0,0,z0+T*k/N],UX,UY);
+    const last=i===N; setPlane([0,0,z0+th*k/N],UX,UY);
     ctx.fillStyle=last?body:side; ctx.fill(PATH[pid],"evenodd");
     if(!last) return;
     ctx.lineWidth=.4; ctx.strokeStyle=opaque?"rgba(255,255,255,.10)":"rgba(170,225,255,.32)"; ctx.stroke(PATH[pid]);
@@ -287,7 +301,7 @@ function drawStand(alpha){
   ["ST0","ST1","ST2","ST3"].forEach((pid,i)=>{
     const y0=-74+i*T;
     const sdim = focus && focus!==pid; const sfoc = focus===pid;
-    for(let k=0;k<=3;k++){const kk=fromTop?k:3-k; setPlane([0,y0+T*kk/3,12+2.5*st.gap],UX,[0,0,-1]); ctx.globalAlpha=sdim?.1:1;
+    for(let k=0;k<=3;k++){const kk=fromTop?k:3-k; setPlane([0,y0+T*kk/3,12+exMid()],UX,[0,0,-1]); ctx.globalAlpha=sdim?.1:1;
       if(sfoc){ctx.fillStyle=k===3?"#ffc66b":"#8a5a14"; ctx.fill(PATH[pid],"evenodd"); continue;}
       if(glue){ctx.fillStyle=k===3?"rgba(255,154,60,.85)":"rgba(156,82,22,.6)";}
       else ctx.fillStyle=k===3?`rgba(190,232,255,${.2*alpha})`:`rgba(140,200,230,${.1*alpha})`;
@@ -296,7 +310,7 @@ function drawStand(alpha){
     ctx.globalAlpha=1;
   });
 }
-function wirePts(){const z=(l,dz)=>l*T+dz+l*st.gap;
+function wirePts(){const z=(l,dz)=>l*T+dz+ex(LVLKEY[l]);
   return [[92,-30,-16],[70,-40,-14],[38,-46,-11],[8,-44,-6],[0,-42,z(0,2)],[0,-42,z(1,2)],[0,-50,z(1,2)],[0,-59,z(1,2.2)],[0,-61.4,z(2,.5)],[0,-61.4,z(2,2)]];}
 function drawWire(){
   const P=wirePts().map(project); ctx.setTransform(DPR,0,0,DPR,0,0);
@@ -314,29 +328,67 @@ function drawWire(){
 function drawCavity(z0){ for(const k of [0,1]){ setPlane([0,0,z0+.3+k*(T-.6)],UX,UY); ctx.fillStyle="rgba(61,139,255,.26)"; ctx.fill(CAVITY,"evenodd"); }
   ctx.strokeStyle="rgba(110,170,255,.9)"; ctx.lineWidth=.6; ctx.stroke(CAVITY); }
 
+// ================== ЛЕВІТАЦІЯ / ГОЛО-ПРОЄКТОР ==================
+const FLOOR=-96;
+const PARTS=[...Array(46)].map(()=>({a:Math.random()*6.283,r:8+Math.random()*52,sp:.006+Math.random()*.012,ph:Math.random()*30,s:.5+Math.random()*1.1}));
+function showStandNow(){ return glue || (focus&&focus.startsWith("ST")) || !!STEPS[cur].bp; }
+function holoPad(){
+  const b0=bob; bob=0; const s=scale()*DPR, tt=nowT/1000, red=overload;
+  const C1=red?"255,80,70":"102,220,255";
+  // промінь: від платформи до низу реактора (екранні координати)
+  const P=(x,y,z)=>project([x,y,z]);
+  const pl=P(-58,FLOOR,12+exMid()), pr=P(58,FLOOR,12+exMid()), tl=P(-46,-70+b0,12+exMid()), tr=P(46,-70+b0,12+exMid());
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  const gr=ctx.createLinearGradient(0,pl[1],0,tl[1]); gr.addColorStop(0,`rgba(${C1},.22)`); gr.addColorStop(1,`rgba(${C1},0)`);
+  ctx.fillStyle=gr; ctx.beginPath(); ctx.moveTo(pl[0],pl[1]); ctx.lineTo(pr[0],pr[1]); ctx.lineTo(tr[0],tr[1]); ctx.lineTo(tl[0],tl[1]); ctx.closePath(); ctx.fill();
+  // платформа на підлозі
+  setPlane([0,FLOOR,12+exMid()],UX,[0,0,-1]);
+  const g=ctx.createRadialGradient(0,0,4,0,0,78); g.addColorStop(0,`rgba(${C1},.55)`); g.addColorStop(.45,`rgba(${C1},.16)`); g.addColorStop(1,`rgba(${C1},0)`);
+  ctx.fillStyle=g; ctx.beginPath(); ctx.arc(0,0,78,0,7); ctx.fill();
+  // тінь реактора
+  const sh=1-b0/14; ctx.fillStyle=`rgba(0,0,0,${.35*sh})`; ctx.beginPath(); ctx.ellipse?ctx.ellipse(0,0,46*sh,9*sh,0,0,7):ctx.arc(0,0,30,0,7); ctx.fill();
+  ctx.lineWidth=.6;
+  [[60,0,.75],[68,.4,.45],[52,-.7,.5]].forEach(([r,dir,a],i)=>{
+    ctx.strokeStyle=`rgba(${C1},${a})`; ctx.setLineDash(i===1?[3,5]:i===2?[14,6]:[]);
+    ctx.lineDashOffset=-tt*20*(dir||1); ctx.beginPath(); ctx.arc(0,0,r,0,7); ctx.stroke(); });
+  ctx.setLineDash([]);
+  for(let k=0;k<24;k++){ const a=k/24*6.283+tt*.35; ctx.strokeStyle=`rgba(${C1},.6)`; ctx.beginPath();
+    ctx.moveTo(Math.cos(a)*72,Math.sin(a)*72); ctx.lineTo(Math.cos(a)*76,Math.sin(a)*76); ctx.stroke(); }
+  // частинки, що піднімаються
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  for(const q of PARTS){ const h=((tt*q.sp*60+q.ph)%26); const y=FLOOR+h, k=1-h/26;
+    const p=P(Math.cos(q.a+tt*.2)*q.r*(.7+.3*k),y,12+exMid()+Math.sin(q.a+tt*.2)*q.r*.5);
+    ctx.fillStyle=`rgba(${red?"255,140,120":"190,240,255"},${.75*k})`; ctx.beginPath(); ctx.arc(p[0],p[1],q.s*Math.max(.6,scale()/1.6),0,7); ctx.fill(); }
+  bob=b0;
+}
 function draw(){
   if(!W) return;
   ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,cv.width,cv.height);
   const front=rot([0,0,1])[2]>0, fromTop=rot([0,1,0])[2]>0, standA=(focus&&focus.startsWith("ST"))?1:Math.max(0,1-st.gap/3);
-  if(fromTop) drawStand(standA);
-  const lv=[0,1,2,3,4,5]; if(!front) lv.reverse();
-  for(const l of lv){
-    const zl=l*T+l*st.gap;
-    const cart=()=>{ if(l!==4) return;
-      if(front){ drawPhoto(16.8+4*st.gap); setPlane([0,0,20+4*st.gap],UX,UY); ctx.fillStyle="rgba(255,255,255,.07)"; ctx.fill(PATH.W1);
-        ctx.strokeStyle="rgba(255,255,255,.18)"; ctx.lineWidth=.3; ctx.stroke(PATH.W1); }
-      else { setPlane([0,0,16.7+4*st.gap],UX,UY); ctx.fillStyle=glue?"#e7edf2":"#111"; ctx.fill(PATH.K1); } };
-    if(!front) cart();
-    for(const [pid,L] of STACK) if(L===l) slab(pid,zl,front,(front&&(pid==="L1"||pid==="L2"))?glowDisc:null);
-    if(l===1 && wire) drawCavity(zl);
-    if(l===2||l===3){ setPlane([0,0,zl+T/2],UX,UY);
-      ctx.strokeStyle = glue?"#ffe066": led>.5?"rgba(255,248,214,.95)":"rgba(200,200,190,.5)"; ctx.lineWidth=2.2;
-      ctx.beginPath(); ctx.arc(0,0,60.4,0,7); ctx.stroke(); }
-    if(l===1 && wire && front) drawWire();
-    if(front) cart();
+  const standMode=showStandNow();
+  if(!standMode) holoPad();
+  if(fromTop && standMode) drawStand(standA);
+  // усі деталі окремо, від дальньої до ближньої
+  const list=ITEMS.map(it=>({it,z:it[3]+ex(it[0])+it[4]/2})).sort((A,B)=>front?A.z-B.z:B.z-A.z);
+  for(const {it} of list){
+    const [key,kind,pid,z0r,th]=it, z0=z0r+ex(key);
+    if(kind==="slab"){
+      if(pid==="W1"){ if(focus&&focus!=="W1") ctx.globalAlpha=.1;
+        setPlane([0,0,z0+(front?th:0)],UX,UY); ctx.fillStyle=(glue||focus==="W1")?(focus==="W1"?"#ffc66b":"#e7edf2"):"rgba(255,255,255,.08)"; ctx.fill(PATH.W1);
+        ctx.strokeStyle="rgba(255,255,255,.3)"; ctx.lineWidth=.3; ctx.stroke(PATH.W1); ctx.globalAlpha=1; }
+      else slab(pid,z0,front,(front&&(pid==="L1"||pid==="L2"))?glowDisc:null,th);
+      if(key==="R1" && wire) drawCavity(z0);
+      if(key==="R1" && wire && front) drawWire();
+    } else if(kind==="photo"){ drawPhoto(z0); }
+    else if(kind==="card"){ if(focus) ctx.globalAlpha=.1; setPlane([0,0,z0+th],UX,UY); ctx.fillStyle=glue?"#e7edf2":"#b08a55"; ctx.fill(PATH.K1); ctx.globalAlpha=1; }
+    else if(kind==="led"){ if(focus) ctx.globalAlpha=.15;
+      for(const dz of [1,th/2,th-1]){ setPlane([0,0,z0+dz],UX,UY);
+        ctx.strokeStyle = glue?"#ffe066": overload?"rgba(255,120,100,.95)": led>.5?"rgba(255,248,214,.95)":"rgba(200,200,190,.5)"; ctx.lineWidth=dz===th/2?2.6:1.2;
+        ctx.beginPath(); ctx.arc(0,0,61.3,0,7); ctx.stroke(); }
+      ctx.globalAlpha=1; }
   }
   if(wire && !front) drawWire();
-  if(!fromTop) drawStand(standA);
+  if(!fromTop && standMode) drawStand(standA);
   placeTags(); hud();
 }
 
@@ -347,14 +399,14 @@ function hud(){
   const y=((st.yaw/D2R)%360+360)%360;
   roEl.innerHTML=`SEQ ${String(cur+1).padStart(2,"0")}/${String(STEPS.length).padStart(2,"0")}<br>YAW ${pad(y,3)}° · PITCH ${pad(st.pitch/D2R,2)}°<br>ZOOM ${st.zoom.toFixed(2)} · Δ ${st.gap.toFixed(1)} MM<br>LED ${pad(led*100,3)}% ${led>.5?"ONLINE":"STANDBY"}`;
   ro2El.textContent = overload?"MODE: !!! OVERLOAD !!!": wire?"MODE: POWER ROUTE": glue?"MODE: ASSEMBLY MAP": st.gap>2?"MODE: EXPLODED VIEW":"MODE: LIVE";
-  const c=project([0,0,12+2.5*st.gap]), R0=72*scale();
+  const c=project([0,0,12+exMid()]), R0=72*scale();
   [[r1,R0+14],[r2,R0+26]].forEach(([el,r])=>{el.style.width=el.style.height=(2*r)+"px"; el.style.left=(c[0]-r)+"px"; el.style.top=(c[1]-r)+"px";});
 }
 // ================== ПІДПИСИ ==================
 const tagsEl=document.getElementById("tags"); let curTags=[];
 function setTags(list){ tagsEl.innerHTML=""; curTags=list.map(t=>{const d=document.createElement("div"); d.className="tag "+(t.c||""); d.textContent=t.t; d.style.opacity=0; tagsEl.appendChild(d); return {el:d,...t};});
   setTimeout(()=>curTags.forEach(t=>t.el.style.opacity=1),650); }
-function placeTags(){ for(const t of curTags){ const p=[t.p[0],t.p[1],t.p[2]+(t.lvl!=null?t.lvl*st.gap:0)]; const [x,y]=project(p);
+function placeTags(){ for(const t of curTags){ const p=[t.p[0],t.p[1],t.p[2]+(t.lvl!=null?ex(LVLKEY[t.lvl]):0)]; const [x,y]=project(p);
   const off=y<30||x<30||x>W-30||y>H-10; t.el.style.left=x+"px"; t.el.style.top=(y-14)+"px"; t.el.style.visibility=off?"hidden":"visible"; } }
 
 // ================== АНІМАЦІЯ ==================
@@ -369,7 +421,12 @@ function goTo(cam){
 let last=0;
 function frame(t){
   requestAnimationFrame(frame);
-  let dirty=false;
+  let dirty=false; nowT=t;
+  levOn = !showStandNow() && !reduce;
+  const nb = levOn ? 4*Math.sin(t/900) + 9 : 0;         // висить ~5–13 мм над «нулем»
+  const ns = levOn ? .03*Math.sin(t/1700) : 0;
+  const vt = showStandNow()?0:14; if(Math.abs(viewOff-vt)>.05){ viewOff+=(vt-viewOff)*.08; dirty=true; } else viewOff=vt;
+  if(levOn || Math.abs(bob-nb)>.01 || Math.abs(sway-ns)>.0005){ bob+= (nb-bob)*(levOn?1:.15); sway+=(ns-sway)*(levOn?1:.15); dirty=true; }
   if(anim){ let k=Math.min(1,(t-anim.t0)/anim.dur); const e=k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;
     for(const key of ["yaw","pitch","zoom","gap"]) st[key]=anim.from[key]+(anim.to[key]-anim.from[key])*e;
     if(k>=1) anim=null; dirty=true; }
@@ -465,7 +522,7 @@ function buildBlueprints(){
     const pid=b.dataset.pid; focus = focus===pid?null:pid;
     grid.querySelectorAll(".bp").forEach(x=>x.setAttribute("aria-pressed",x.dataset.pid===focus));
     if(focus && focus.startsWith("ST")) goTo({yaw:-30,pitch:30,zoom:.95,gap:0});
-    else if(st.gap<8) goTo({yaw:-38,pitch:14,zoom:.86,gap:14});
+    else if(st.gap<8) goTo({yaw:-60,pitch:14,zoom:.62,gap:14});
     draw();
   });
 }
